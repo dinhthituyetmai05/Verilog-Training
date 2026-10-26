@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "led_highway[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led_highway[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led_highway[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led_country[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led_country[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led_country[2]",
+					"strict" : false
+				},
+				{
+					"name" : "car",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+
+State Machine - |traffic_light_top|country_road_controller:u_country|current_state
+Name current_state.GREEN current_state.RED current_state.YELLOW 
+current_state.RED 0 0 0 
+current_state.YELLOW 0 1 1 
+current_state.GREEN 1 1 0 
+
+State Machine - |traffic_light_top|highway_controller:u_highway|current_state
+Name current_state.GREEN current_state.RED current_state.YELLOW 
+current_state.GREEN 0 0 0 
+current_state.YELLOW 1 0 1 
+current_state.RED 1 1 0 
