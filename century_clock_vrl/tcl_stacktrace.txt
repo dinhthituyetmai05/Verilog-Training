@@ -1,0 +1,140 @@
+Mon Aug 18 01:08:29 ICT 2025
+Trace back: Missing data value in _dinfo!
+    while executing
+"error "Missing data value in _dinfo!" "
+    (procedure "::vsimwidgets::Srcedit::ResultsWidget::_dinfo" body line 34)
+    invoked from within
+"_dinfo "store_unique" $_final"
+    (procedure "::vsimwidgets::Srcedit::ResultsWidget::_filter_data" body line 71)
+    invoked from within
+"_filter_data $d $nohistory 0"
+    (object "::.main_pane.source.interior.cs.body.editor.cs.panedWindow.f1.frame.paned.f0.frame.sw.tf.extra.drivers" method "::vsimwidgets::Srcedit::ResultsWidget::_update" body line 21)
+    invoked from within
+"::.main_pane.source.interior.cs.body.editor.cs.panedWindow.f1.frame.paned.f0.frame.sw.tf.extra.drivers _update -data {} -signal sim:/tb_dem_ngaythangn..."
+    ("eval" body line 1)
+    invoked from within
+"eval $o _update $args"
+    (procedure "::vsimwidgets::Srcedit::ResultsWidget::Update" body line 10)
+    invoked from within
+"vsimwidgets::Srcedit::ResultsWidget::Update  -data $DriverList -signal $sig -from $drivers_or_readers"
+    (procedure "::vsimwidgets::Srcedit::HandleDrivers" body line 60)
+    invoked from within
+"vsimwidgets::Srcedit::HandleDrivers [lindex $sigList 0] $d_or_r"
+    (procedure "_showDFReadersDrivers" line 41)
+    invoked from within
+"_showDFReadersDrivers drivers .main_pane.wave.interior.cs.body.pw.wf 1"
+    ("eval" body line 1)
+    invoked from within
+"eval _showDFReadersDrivers "drivers" $winname $classic $args"
+    (procedure "Wave::ShowDFDrivers" line 2)
+    invoked from within
+"Wave::ShowDFDrivers $top 1"
+    (procedure "Wave::1Up" line 27)
+    invoked from within
+"Wave::1Up $widget $x $y"
+    (procedure "Wave::SelectUp" line 4)
+    invoked from within
+"Wave::SelectUp	 .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 457 146 736 321 "
+    (command bound to event)
+  <2:C:/questasim64_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {Missing data value in _dinfo!}
+  <1:eval:1: ::tk::dialog::error::bgerror {Missing data value in _dinfo!}
+Mon Aug 18 01:11:56 ICT 2025
+Trace back: bad window path name ""
+    while executing
+"winfo parent $child"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::IsChildOf" body line 3)
+    invoked from within
+"$::vsimPriv(windowmgr) IsChildOf [$wo GetData wave] [focus]"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::ActivePane" body line 9)
+    invoked from within
+"ActivePane"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Activate" body line 21)
+    invoked from within
+".main_pane.dataflow.interior.cs.body.pw.df.c Activate .main_pane.dataflow"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: {.main_pane.dataflow.interior.cs.body.pw.df.c Activate} .main_pane.dataflow"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.dataflow" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 35)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:C:/questasim64_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {bad window path name ""}
+  <1:proc:24: ::tk::dialog::error::bgerror {bad window path name ""}
+Mon Aug 18 12:43:12 ICT 2025
+Trace back: can't read "data(realized)": no such variable
+    while executing
+"if {$data(realized) && $data(vsb,present)} {
+        set grid $path._grid
+        if {$data(vsb,auto)} {
+            if {$data(vsb,packed) && $vmin ==..."
+    (procedure "CustomScrolledText::_set_vscroll" line 9)
+    invoked from within
+"CustomScrolledText::_set_vscroll .main_pane.source1.interior.cs.body.editor.cs.panedWindow.f1.frame.paned.f0.frame.sw 0.0 1.0"
+    (vertical scrolling command executed by text)
+  <2:C:/questasim64_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {can't read "data(realized)": no such variable}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "data(realized)": no such variable}
+Mon Aug 18 12:43:14 ICT 2025
+Trace back: can't read "data(realized)": no such variable
+    while executing
+"if {$data(realized) && $data(hsb,present)} {
+        set grid $path._grid
+        if {$data(hsb,auto)} {
+            if {$data(hsb,packed) && $vmin ==..."
+    (procedure "CustomScrolledText::_set_hscroll" line 9)
+    invoked from within
+"CustomScrolledText::_set_hscroll .main_pane.source1.interior.cs.body.editor.cs.panedWindow.f1.frame.paned.f0.frame.sw 0.0 1.0"
+    (horizontal scrolling command executed by text)
+  <2:C:/questasim64_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {can't read "data(realized)": no such variable}
+  <1:proc:24: ::tk::dialog::error::bgerror {can't read "data(realized)": no such variable}
+Mon Aug 18 12:43:15 ICT 2025
+Trace back: can't read "::HTE::Editor::winData(,textChg)": no such element in array
+    while executing
+"return $::HTE::Editor::winData($tabid,textChg)"
+    (procedure "DesignPad::edit" line 17)
+    invoked from within
+"DesignPad::edit .main_pane.source1.interior.cs.body.editor.cs isModified"
+    ("eval" body line 1)
+    invoked from within
+"eval DesignPad::$cmd .main_pane.source1.interior.cs.body.editor.cs $args"
+    (procedure ".main_pane.source1.interior.cs.body.editor.cs" line 1)
+    invoked from within
+".main_pane.source1.interior.cs.body.editor.cs edit isModified"
+    ("eval" body line 1)
+    invoked from within
+"eval [linsert $args 0 $itk_component(editor) edit] "
+    (object "::.main_pane.source1.interior.cs.body.editor" method "::vsimwidgets::Srcedit::edit" body line 1)
+    invoked from within
+"$editor edit isModified"
+    (procedure "SourceTitle" line 8)
+    invoked from within
+"SourceTitle .main_pane.source1"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-titlecommand) $frame_name"
+    (object "::.main_pane.source1" method "::mtiwidgets::WindowObj::Title" body line 9)
+    invoked from within
+"$prior Title"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::SetDefaultWindow" body line 13)
+    invoked from within
+"$itk_option(-windowmanager) SetDefaultWindow $frame_name"
+    (object "::.main_pane.source5" method "::mtiwidgets::WindowObj::Activate" body line 10)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 35)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:C:/questasim64_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {can't read "::HTE::Editor::winData(,textChg)": no such element in array}
+  <1:proc:24: ::tk::dialog::error::bgerror {can't read "::HTE::Editor::winData(,textChg)": no such element in array}

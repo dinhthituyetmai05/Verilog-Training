@@ -1,0 +1,265 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hexout0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout6[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout6[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout6[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout7[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout7[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout7[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout7[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout7[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switch",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rstn",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_up",
+					"strict" : false
+				},
+				{
+					"name" : "btn_down",
+					"strict" : false
+				},
+				{
+					"name" : "btn_mod",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

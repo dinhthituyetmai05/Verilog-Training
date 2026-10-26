@@ -1,0 +1,1041 @@
+Analysis & Synthesis report for top_century_clock
+Sat Aug 23 15:00:15 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db
+  9. State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db
+ 10. State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db
+ 11. State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db
+ 12. State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db
+ 13. State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Inverted Register Statistics
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|chia_10enable:M1
+ 20. Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1
+ 21. Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1
+ 22. Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2
+ 23. Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|chia_10enable:M1
+ 24. Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1
+ 25. Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2
+ 26. Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1
+ 27. Port Connectivity Checks: "top_ngaythangnam:U_ntn|hextobcd_ntn:M3|hextobcd_6bit:K2"
+ 28. Port Connectivity Checks: "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|bcd_to_binary:r2"
+ 29. Port Connectivity Checks: "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|dem_giophutgiay:r3"
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Aug 23 15:00:15 2025           ;
+; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                      ; top_century_clock                               ;
+; Top-level Entity Name              ; top_century_clock                               ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 945                                             ;
+;     Total combinational functions  ; 945                                             ;
+;     Dedicated logic registers      ; 252                                             ;
+; Total registers                    ; 252                                             ;
+; Total pins                         ; 64                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; top_century_clock  ; top_century_clock  ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processors 6-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
+; xu_ly_mod_ntn.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_ntn.sv         ;         ;
+; xu_ly_mod_gpg.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv         ;         ;
+; top_ngaythangnam.sv              ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv      ;         ;
+; top_giophutgiay.sv               ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv       ;         ;
+; top_century_clock.sv             ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv     ;         ;
+; lam_hep_xung.sv                  ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/lam_hep_xung.sv          ;         ;
+; hextobcd_ntn.sv                  ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv          ;         ;
+; hextobcd_gpg.sv                  ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv          ;         ;
+; giai_ma_7doan_ena.sv             ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/giai_ma_7doan_ena.sv     ;         ;
+; giaima_hienthi_ntn.sv            ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_ntn.sv    ;         ;
+; giaima_hienthi_gpg.sv            ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_gpg.sv    ;         ;
+; dem_ngaythangnam_3key.sv         ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv ;         ;
+; dem_ngaythangnam.sv              ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv      ;         ;
+; dem_giophutgiay_3key.sv          ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv  ;         ;
+; dem_giophutgiay.sv               ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv       ;         ;
+; debounce.sv                      ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv              ;         ;
+; chia_10enable.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv         ;         ;
+; bcdtohex.sv                      ; yes             ; User SystemVerilog HDL File  ; E:/Verilog_Training/quartus_fpga/century_clock_vrl/bcdtohex.sv              ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 945       ;
+;                                             ;           ;
+; Total combinational functions               ; 945       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 483       ;
+;     -- 3 input functions                    ; 96        ;
+;     -- <=2 input functions                  ; 366       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 668       ;
+;     -- arithmetic mode                      ; 277       ;
+;                                             ;           ;
+; Total registers                             ; 252       ;
+;     -- Dedicated logic registers            ; 252       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 64        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 252       ;
+; Total fan-out                               ; 3797      ;
+; Average fan-out                             ; 2.87      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                     ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                               ; Entity Name           ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |top_century_clock                ; 945 (97)            ; 252 (0)                   ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |top_century_clock                                                                                                ; top_century_clock     ; work         ;
+;    |top_giophutgiay:U_gpg|        ; 451 (0)             ; 208 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg                                                                          ; top_giophutgiay       ; work         ;
+;       |chia_10enable:M1|          ; 221 (221)           ; 113 (113)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|chia_10enable:M1                                                         ; chia_10enable         ; work         ;
+;       |dem_giophutgiay_3key:M2|   ; 189 (0)             ; 95 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2                                                  ; dem_giophutgiay_3key  ; work         ;
+;          |debounce:K1|            ; 35 (35)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1                                      ; debounce              ; work         ;
+;          |debounce:K2|            ; 34 (34)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2                                      ; debounce              ; work         ;
+;          |dem_giophutgiay:K3|     ; 76 (76)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|dem_giophutgiay:K3                               ; dem_giophutgiay       ; work         ;
+;          |xu_ly_mod_gpg:K4|       ; 44 (0)              ; 30 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4                                 ; xu_ly_mod_gpg         ; work         ;
+;             |dem_2bit_btn:n1|     ; 37 (0)              ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1                 ; dem_2bit_btn          ; work         ;
+;                |debounce:u1|      ; 35 (35)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1     ; debounce              ; work         ;
+;                |dem_2bit:u3|      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|dem_2bit:u3     ; dem_2bit              ; work         ;
+;                |lam_hep_xung:u2|  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|lam_hep_xung:u2 ; lam_hep_xung          ; work         ;
+;             |mod_nhapnhay_gpg:n2| ; 7 (7)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2             ; mod_nhapnhay_gpg      ; work         ;
+;       |giama_hienthi_gpg:M4|      ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|giama_hienthi_gpg:M4                                                     ; giama_hienthi_gpg     ; work         ;
+;          |giai_ma_7doan_ena:A2|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|giama_hienthi_gpg:M4|giai_ma_7doan_ena:A2                                ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:A4|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|giama_hienthi_gpg:M4|giai_ma_7doan_ena:A4                                ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:A6|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|giama_hienthi_gpg:M4|giai_ma_7doan_ena:A6                                ; giai_ma_7doan_ena     ; work         ;
+;       |hextobcd_gpg:M3|           ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|hextobcd_gpg:M3                                                          ; hextobcd_gpg          ; work         ;
+;          |hextobcd_6bit:K1|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|hextobcd_gpg:M3|hextobcd_6bit:K1                                         ; hextobcd_6bit         ; work         ;
+;          |hextobcd_6bit:K2|       ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|hextobcd_gpg:M3|hextobcd_6bit:K2                                         ; hextobcd_6bit         ; work         ;
+;          |hextobcd_6bit:K3|       ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_giophutgiay:U_gpg|hextobcd_gpg:M3|hextobcd_6bit:K3                                         ; hextobcd_6bit         ; work         ;
+;    |top_ngaythangnam:U_ntn|       ; 397 (6)             ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn                                                                         ; top_ngaythangnam      ; work         ;
+;       |chia_10enable:M1|          ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|chia_10enable:M1                                                        ; chia_10enable         ; work         ;
+;       |dem_ngaythangnam_3key:M2|  ; 159 (0)             ; 44 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2                                                ; dem_ngaythangnam_3key ; work         ;
+;          |dem_ngaythangnam:K4|    ; 159 (94)            ; 44 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4                            ; dem_ngaythangnam      ; work         ;
+;             |dem_giophutgiay:r3|  ; 65 (65)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|dem_giophutgiay:r3         ; dem_giophutgiay       ; work         ;
+;       |giama_hienthi_ntn:M4|      ; 56 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4                                                    ; giama_hienthi_ntn     ; work         ;
+;          |giai_ma_7doan_ena:D1|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4|giai_ma_7doan_ena:D1                               ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:D2|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4|giai_ma_7doan_ena:D2                               ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:D4|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4|giai_ma_7doan_ena:D4                               ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:D5|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4|giai_ma_7doan_ena:D5                               ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:D6|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4|giai_ma_7doan_ena:D6                               ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:D7|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4|giai_ma_7doan_ena:D7                               ; giai_ma_7doan_ena     ; work         ;
+;          |giai_ma_7doan_ena:D8|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4|giai_ma_7doan_ena:D8                               ; giai_ma_7doan_ena     ; work         ;
+;       |hextobcd_ntn:M3|           ; 146 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|hextobcd_ntn:M3                                                         ; hextobcd_ntn          ; work         ;
+;          |hextobcd_16bit:K3|      ; 132 (132)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|hextobcd_ntn:M3|hextobcd_16bit:K3                                       ; hextobcd_16bit        ; work         ;
+;          |hextobcd_6bit:K1|       ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|hextobcd_ntn:M3|hextobcd_6bit:K1                                        ; hextobcd_6bit         ; work         ;
+;          |hextobcd_6bit:K2|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_century_clock|top_ngaythangnam:U_ntn|hextobcd_ntn:M3|hextobcd_6bit:K2                                        ; hextobcd_6bit         ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db ;
++------------------+------------------+----------------+------------------+------------------------------------------------------------------+
+; Name             ; current_db.WAIT1 ; current_db.ONE ; current_db.WAIT0 ; current_db.ZERO                                                  ;
++------------------+------------------+----------------+------------------+------------------------------------------------------------------+
+; current_db.ZERO  ; 0                ; 0              ; 0                ; 0                                                                ;
+; current_db.WAIT0 ; 0                ; 0              ; 1                ; 1                                                                ;
+; current_db.ONE   ; 0                ; 1              ; 0                ; 1                                                                ;
+; current_db.WAIT1 ; 1                ; 0              ; 0                ; 1                                                                ;
++------------------+------------------+----------------+------------------+------------------------------------------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------+
+; State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db ;
++------------------+------------------+----------------+------------------+---------------------------------+
+; Name             ; current_db.WAIT1 ; current_db.ONE ; current_db.WAIT0 ; current_db.ZERO                 ;
++------------------+------------------+----------------+------------------+---------------------------------+
+; current_db.ZERO  ; 0                ; 0              ; 0                ; 0                               ;
+; current_db.WAIT0 ; 0                ; 0              ; 1                ; 1                               ;
+; current_db.ONE   ; 0                ; 1              ; 0                ; 1                               ;
+; current_db.WAIT1 ; 1                ; 0              ; 0                ; 1                               ;
++------------------+------------------+----------------+------------------+---------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------+
+; State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db ;
++------------------+------------------+----------------+------------------+---------------------------------+
+; Name             ; current_db.WAIT1 ; current_db.ONE ; current_db.WAIT0 ; current_db.ZERO                 ;
++------------------+------------------+----------------+------------------+---------------------------------+
+; current_db.ZERO  ; 0                ; 0              ; 0                ; 0                               ;
+; current_db.WAIT0 ; 0                ; 0              ; 1                ; 1                               ;
+; current_db.ONE   ; 0                ; 1              ; 0                ; 1                               ;
+; current_db.WAIT1 ; 1                ; 0              ; 0                ; 1                               ;
++------------------+------------------+----------------+------------------+---------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------+
+; State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db ;
++------------------+------------------+----------------+------------------+-------------------------------+
+; Name             ; current_db.WAIT1 ; current_db.ONE ; current_db.WAIT0 ; current_db.ZERO               ;
++------------------+------------------+----------------+------------------+-------------------------------+
+; current_db.ZERO  ; 0                ; 0              ; 0                ; 0                             ;
+; current_db.WAIT0 ; 0                ; 0              ; 1                ; 1                             ;
+; current_db.ONE   ; 0                ; 1              ; 0                ; 1                             ;
+; current_db.WAIT1 ; 1                ; 0              ; 0                ; 1                             ;
++------------------+------------------+----------------+------------------+-------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------+
+; State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db ;
++------------------+------------------+----------------+------------------+-------------------------------+
+; Name             ; current_db.WAIT1 ; current_db.ONE ; current_db.WAIT0 ; current_db.ZERO               ;
++------------------+------------------+----------------+------------------+-------------------------------+
+; current_db.ZERO  ; 0                ; 0              ; 0                ; 0                             ;
+; current_db.WAIT0 ; 0                ; 0              ; 1                ; 1                             ;
+; current_db.ONE   ; 0                ; 1              ; 0                ; 1                             ;
+; current_db.WAIT1 ; 1                ; 0              ; 0                ; 1                             ;
++------------------+------------------+----------------+------------------+-------------------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db ;
++------------------+------------------+----------------+------------------+----------------------------------------------------------------+
+; Name             ; current_db.WAIT1 ; current_db.ONE ; current_db.WAIT0 ; current_db.ZERO                                                ;
++------------------+------------------+----------------+------------------+----------------------------------------------------------------+
+; current_db.ZERO  ; 0                ; 0              ; 0                ; 0                                                              ;
+; current_db.WAIT0 ; 0                ; 0              ; 1                ; 1                                                              ;
+; current_db.ONE   ; 0                ; 1              ; 0                ; 1                                                              ;
+; current_db.WAIT1 ; 1                ; 0              ; 0                ; 1                                                              ;
++------------------+------------------+----------------+------------------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                      ;
++---------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                 ; Reason for Removal                                                                                                      ;
++---------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[6]              ; Merged with top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[7]            ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[4]              ; Merged with top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[5]            ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[0..2]           ; Merged with top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[3]            ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[4]                ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[5]              ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[2]                ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[3]              ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[0]                ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[1]              ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[22]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[22]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[19]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[19]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[18]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[18]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[14]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[14]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[11]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[11]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[9]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[9]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[8]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[8]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[6]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[6]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[24]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[24]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[23]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[23]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[21]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[21]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[20]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[20]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[17]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[17]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[16]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[16]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[15]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[15]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[13]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[13]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[12]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[12]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[10]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[10]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[7]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[7]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[5]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[5]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[4]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[4]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[3]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[3]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[2]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[2]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[1]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[1]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d5hz_r[0]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[0]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[14]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[14]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[13]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[13]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[8]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[8]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[7]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[7]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[5]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[5]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[3]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[3]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[16]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[16]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[15]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[15]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[12]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[12]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[11]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[11]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[10]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[10]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[9]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[9]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[6]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[6]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[4]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[4]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[2]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[2]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[1]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[1]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1khz_r[0]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[0]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[17]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[17]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[16]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[16]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[15]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[15]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[14]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[14]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[12]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[12]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[7]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[7]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[4]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[4]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[19]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[19]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[18]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[18]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[13]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[13]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[11]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[11]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[10]                                                          ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[10]                                                         ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[9]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[9]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[8]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[8]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[6]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[6]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[5]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[5]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[3]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[3]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[2]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[2]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[1]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[1]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d100hz_r[0]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[0]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[18]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[18]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[17]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[17]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[16]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[16]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[15]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[15]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[13]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[13]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[8]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[8]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[5]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[5]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[20]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[20]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[19]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[19]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[14]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[14]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[12]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[12]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[11]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[11]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[10]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[10]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[9]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[9]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[7]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[7]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[6]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[6]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[4]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[4]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[3]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[3]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[2]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[2]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[1]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[1]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d50hz_r[0]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[0]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[20]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[20]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[17]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[17]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[16]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[16]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[12]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[12]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[9]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[9]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[7]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[7]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[6]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[6]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[4]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[4]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[22]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[22]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[21]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[21]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[19]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[19]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[18]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[18]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[15]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[15]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[14]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[14]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[13]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[13]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[11]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[11]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[10]                                                           ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[10]                                                          ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[8]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[8]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[5]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[5]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[3]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[3]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[2]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[2]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[1]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[1]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d20hz_r[0]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[0]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[24]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[24]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[22]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[22]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[21]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[21]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[20]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[20]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[19]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[19]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[18]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[18]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[16]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[16]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[14]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[14]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[13]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[13]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[12]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[12]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[11]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[11]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[6]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[6]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[26]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[26]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[25]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[25]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[23]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[23]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[17]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[17]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[15]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[15]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[10]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[10]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[9]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[9]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[8]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[8]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[7]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[7]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[5]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[5]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[4]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[4]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[3]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[3]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[2]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[2]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[1]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[1]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d1hz_r[0]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[0]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[23]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[23]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[21]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[21]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[20]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[20]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[19]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[19]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[18]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[18]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[17]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[17]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[15]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[15]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[13]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[13]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[12]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[12]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[11]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[11]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[10]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[10]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[5]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[5]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[25]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[25]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[24]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[24]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[22]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[22]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[16]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[16]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[14]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[14]                                                           ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[9]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[9]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[8]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[8]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[7]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[7]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[6]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[6]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[4]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[4]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[3]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[3]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[2]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[2]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[1]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[1]                                                            ;
+; top_ngaythangnam:U_ntn|chia_10enable:M1|d2hz_r[0]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[0]                                                            ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db~2     ; Lost fanout                                                                                                             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db~3     ; Lost fanout                                                                                                             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db~2                                      ; Lost fanout                                                                                                             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db~3                                      ; Lost fanout                                                                                                             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db~2                                      ; Lost fanout                                                                                                             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db~3                                      ; Lost fanout                                                                                                             ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db~2                                        ; Lost fanout                                                                                                             ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db~3                                        ; Lost fanout                                                                                                             ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db~2                                        ; Lost fanout                                                                                                             ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db~3                                        ; Lost fanout                                                                                                             ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db~2       ; Lost fanout                                                                                                             ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db~3       ; Lost fanout                                                                                                             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[7]              ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[1]              ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[3]              ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[5]              ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2|enable_r[5]              ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[3]              ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db.ZERO                                   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db.ZERO                                   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db.WAIT1                                  ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db.WAIT1                                  ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|dem_2bit:u3|q[0]             ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|dem_2bit:u3|q[0]             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|dem_2bit:u3|q[1]             ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|dem_2bit:u3|q[1]             ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db.ZERO                                   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db.ZERO                                   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db.WAIT1                                  ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db.WAIT1                                  ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[19]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[19]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[18]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[18]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[17]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[17]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[16]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[16]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[15]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[15]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[14]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[14]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[13]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[13]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[12]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[12]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[11]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[11]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[10]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[10]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[9]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[9]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[8]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[8]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[7]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[7]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[6]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[6]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[5]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[5]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[4]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[4]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[3]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[3]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[2]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[2]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[1]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[1]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[0]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[0]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db.WAIT0                                  ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db.WAIT0                                  ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db.ONE                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db.ONE                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db.ZERO  ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db.ZERO  ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db.WAIT1 ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db.WAIT1 ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|lam_hep_xung:u2|qff          ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|lam_hep_xung:u2|qff          ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[19]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[19]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[18]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[18]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[17]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[17]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[16]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[16]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[15]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[15]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[14]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[14]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[13]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[13]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[12]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[12]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[11]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[11]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[10]                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[10]                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[9]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[9]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[8]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[8]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[7]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[7]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[6]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[6]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[5]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[5]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[4]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[4]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[3]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[3]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[2]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[2]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[1]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[1]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[0]                                     ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[0]                                     ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db.WAIT0                                  ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db.WAIT0                                  ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db.ONE                                    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db.ONE                                    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[19]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[19]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[18]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[18]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[17]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[17]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[16]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[16]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[15]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[15]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[14]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[14]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[13]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[13]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[12]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[12]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[11]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[11]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[10]   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[10]   ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[9]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[9]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[8]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[8]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[7]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[7]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[6]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[6]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[5]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[5]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[4]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[4]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[3]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[3]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[2]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[2]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[1]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[1]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[0]    ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[0]    ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db.WAIT0 ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db.WAIT0 ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db.ONE   ; Merged with top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db.ONE   ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[0]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[0]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[0]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[0]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[0]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[0]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[0]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[0]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[0]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[0]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[0]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[0]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[1]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[1]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[1]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[1]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[1]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[1]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[1]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[1]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[1]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[1]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[1]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[1]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[2]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[2]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[2]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[2]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[2]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[2]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[2]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[2]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[2]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[2]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[2]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[2]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[3]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[3]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[3]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[3]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[3]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[3]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[3]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[3]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[3]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[3]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[3]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[3]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[4]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[4]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[4]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[4]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d100hz_r[4]                                                            ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[4]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d20hz_r[4]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[4]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[4]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[4]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[5]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[5]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d2hz_r[5]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[5]                                                           ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d50hz_r[5]                                                             ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[5]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d5hz_r[6]                                                              ; Merged with top_giophutgiay:U_gpg|chia_10enable:M1|d1hz_r[6]                                                            ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[4..16]                                                         ; Lost fanout                                                                                                             ;
+; Total Number of Removed Registers = 303                                                                       ;                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                  ;
++---------------------------------------------------+--------------------+-----------------------------------------------------+
+; Register name                                     ; Reason for Removal ; Registers Removed due to This Register              ;
++---------------------------------------------------+--------------------+-----------------------------------------------------+
+; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[6] ; Lost Fanouts       ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[8],  ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[14], ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[12], ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[11], ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[10], ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[16], ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[13], ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[7],  ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[15], ;
+;                                                   ;                    ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[9]   ;
+; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[5] ; Lost Fanouts       ; top_giophutgiay:U_gpg|chia_10enable:M1|d1khz_r[4]   ;
++---------------------------------------------------+--------------------+-----------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 252   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 61    ;
+; Number of registers using Asynchronous Clear ; 66    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 118   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                             ;
++------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                              ; Fan out ;
++------------------------------------------------------------------------------------------------+---------+
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[0]                   ; 10      ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[3]                   ; 5       ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[10]                  ; 5       ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[9]                   ; 5       ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[8]                   ; 5       ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[7]                   ; 5       ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[6]                   ; 5       ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[5]                   ; 5       ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[1] ; 26      ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[5] ; 35      ;
+; top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2|enable_r[3] ; 20      ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|thang_r[0]                 ; 16      ;
+; top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|ngay_r[0]                  ; 15      ;
+; Total number of inverted registers = 13                                                        ;         ;
++------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[1]                                ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|thang_r[4]                              ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|ngay_r[3]                               ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|dem_giophutgiay:K3|giay_r[0]                                  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|dem_giophutgiay:K3|phut_r[0]                                  ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|dem_giophutgiay:K3|gio_r[0]                                   ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|dem_giophutgiay:r3|giay_r[1]            ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|dem_giophutgiay:r3|phut_r[5]            ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|dem_giophutgiay:r3|gio_r[1]             ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 20 LEs               ; 60 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_dl[19] ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 20 LEs               ; 60 LEs                 ; Yes        ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_dl[0]    ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 20 LEs               ; 60 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_dl[0]                                   ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 20 LEs               ; 60 LEs                 ; Yes        ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_dl[18]                                    ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 20 LEs               ; 60 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_dl[8]                                   ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 20 LEs               ; 60 LEs                 ; Yes        ; |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_dl[19]                                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|nam_r[3]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |top_century_clock|hexout6                                                                                                     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_century_clock|hexout0                                                                                                     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_century_clock|hexout3                                                                                                     ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |top_century_clock|hexout4                                                                                                     ;
+; 11:1               ; 6 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |top_century_clock|hexout1                                                                                                     ;
+; 11:1               ; 6 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |top_century_clock|hexout3                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|chia_10enable:M1 ;
++----------------+----------+---------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                    ;
++----------------+----------+---------------------------------------------------------+
+; N              ; 50000000 ; Signed Integer                                          ;
++----------------+----------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; N              ; 20    ; Signed Integer                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 20    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; N              ; 20    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|chia_10enable:M1 ;
++----------------+----------+----------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                     ;
++----------------+----------+----------------------------------------------------------+
+; N              ; 50000000 ; Signed Integer                                           ;
++----------------+----------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1 ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; N              ; 20    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2 ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; N              ; 20    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------+
+; N              ; 20    ; Signed Integer                                                                                                   ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ngaythangnam:U_ntn|hextobcd_ntn:M3|hextobcd_6bit:K2" ;
++--------------+-------+----------+---------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                           ;
++--------------+-------+----------+---------------------------------------------------+
+; sohex6bit[5] ; Input ; Info     ; Stuck at GND                                      ;
++--------------+-------+----------+---------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|bcd_to_binary:r2"       ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; binary[6..2] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|dem_giophutgiay:r3"                                                       ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; switch ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 64                          ;
+; cycloneiii_ff         ; 252                         ;
+;     CLR               ; 7                           ;
+;     CLR SLD           ; 1                           ;
+;     ENA CLR           ; 58                          ;
+;     ENA SLD           ; 60                          ;
+;     plain             ; 126                         ;
+; cycloneiii_lcell_comb ; 946                         ;
+;     arith             ; 277                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 257                         ;
+;         3 data inputs ; 19                          ;
+;     normal            ; 669                         ;
+;         1 data inputs ; 26                          ;
+;         2 data inputs ; 83                          ;
+;         3 data inputs ; 77                          ;
+;         4 data inputs ; 483                         ;
+;                       ;                             ;
+; Max LUT depth         ; 20.40                       ;
+; Average LUT depth     ; 6.71                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:10     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Sat Aug 23 14:59:51 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_century_clock -c top_century_clock
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 2 entities, in source file xu_ly_mod_ntn.sv
+    Info (12023): Found entity 1: mod_nhapnhay_ntn File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_ntn.sv Line: 1
+    Info (12023): Found entity 2: xu_ly_mod_ntn File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_ntn.sv Line: 75
+Info (12021): Found 4 design units, including 4 entities, in source file xu_ly_mod_gpg.sv
+    Info (12023): Found entity 1: xu_ly_mod_gpg File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 1
+    Info (12023): Found entity 2: dem_2bit_btn File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 30
+    Info (12023): Found entity 3: dem_2bit File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 57
+    Info (12023): Found entity 4: mod_nhapnhay_gpg File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 69
+Info (12021): Found 1 design units, including 1 entities, in source file top_ngaythangnam.sv
+    Info (12023): Found entity 1: top_ngaythangnam File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top_giophutgiay.sv
+    Info (12023): Found entity 1: top_giophutgiay File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top_century_clock.sv
+    Info (12023): Found entity 1: top_century_clock File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_top_giophutgiay.sv
+    Info (12023): Found entity 1: tb_top_giophutgiay File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_top_giophutgiay.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_hextobcd_ntn.sv
+    Info (12023): Found entity 1: tb_hextobcd_ntn File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_ntn.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_hextobcd_6bit.sv
+    Info (12023): Found entity 1: tb_hextobcd_6bit File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_6bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_dem_ngaythangnam.sv
+    Info (12023): Found entity 1: tb_dem_ngaythangnam File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_ngaythangnam.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_dem_giophutgiay.sv
+    Info (12023): Found entity 1: tb_dem_giophutgiay File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_giophutgiay.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file lam_hep_xung.sv
+    Info (12023): Found entity 1: lam_hep_xung File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/lam_hep_xung.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file hextobcd_ntn.sv
+    Info (12023): Found entity 1: hextobcd_ntn File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv Line: 1
+    Info (12023): Found entity 2: hextobcd_16bit File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv Line: 41
+Info (12021): Found 2 design units, including 2 entities, in source file hextobcd_gpg.sv
+    Info (12023): Found entity 1: hextobcd_gpg File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv Line: 1
+    Info (12023): Found entity 2: hextobcd_6bit File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file giai_ma_7doan_ena.sv
+    Info (12023): Found entity 1: giai_ma_7doan_ena File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/giai_ma_7doan_ena.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file giaima_hienthi_ntn.sv
+    Info (12023): Found entity 1: giama_hienthi_ntn File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_ntn.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file giaima_hienthi_gpg.sv
+    Info (12023): Found entity 1: giama_hienthi_gpg File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_gpg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dem_ngaythangnam_3key.sv
+    Info (12023): Found entity 1: dem_ngaythangnam_3key File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dem_ngaythangnam.sv
+    Info (12023): Found entity 1: dem_ngaythangnam File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dem_giophutgiay_3key.sv
+    Info (12023): Found entity 1: dem_giophutgiay_3key File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dem_giophutgiay.sv
+    Info (12023): Found entity 1: dem_giophutgiay File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
+    Info (12023): Found entity 1: debounce File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file chia_10enable.sv
+    Info (12023): Found entity 1: chia_10enable File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcdtohex.sv
+    Info (12023): Found entity 1: bcd_to_binary File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/bcdtohex.sv Line: 1
+Info (12127): Elaborating entity "top_century_clock" for the top level hierarchy
+Info (12128): Elaborating entity "top_giophutgiay" for hierarchy "top_giophutgiay:U_gpg" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv Line: 38
+Info (12128): Elaborating entity "chia_10enable" for hierarchy "top_giophutgiay:U_gpg|chia_10enable:M1" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at chia_10enable.sv(32): truncated value with size 32 to match size of target (27) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at chia_10enable.sv(33): truncated value with size 32 to match size of target (26) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at chia_10enable.sv(34): truncated value with size 32 to match size of target (25) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at chia_10enable.sv(35): truncated value with size 32 to match size of target (23) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 35
+Warning (10230): Verilog HDL assignment warning at chia_10enable.sv(36): truncated value with size 32 to match size of target (21) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 36
+Warning (10230): Verilog HDL assignment warning at chia_10enable.sv(37): truncated value with size 32 to match size of target (20) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 37
+Warning (10230): Verilog HDL assignment warning at chia_10enable.sv(38): truncated value with size 32 to match size of target (17) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv Line: 38
+Info (12128): Elaborating entity "dem_giophutgiay_3key" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv Line: 49
+Info (12128): Elaborating entity "xu_ly_mod_gpg" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv Line: 25
+Info (12128): Elaborating entity "dem_2bit_btn" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 15
+Info (12128): Elaborating entity "debounce" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 40
+Warning (10230): Verilog HDL assignment warning at debounce.sv(37): truncated value with size 32 to match size of target (20) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv Line: 37
+Warning (10230): Verilog HDL assignment warning at debounce.sv(54): truncated value with size 32 to match size of target (20) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv Line: 54
+Info (12128): Elaborating entity "lam_hep_xung" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|lam_hep_xung:u2" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 46
+Info (12128): Elaborating entity "dem_2bit" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|dem_2bit:u3" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 53
+Warning (10230): Verilog HDL assignment warning at xu_ly_mod_gpg.sv(65): truncated value with size 32 to match size of target (2) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 65
+Info (12128): Elaborating entity "mod_nhapnhay_gpg" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|mod_nhapnhay_gpg:n2" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 25
+Info (12128): Elaborating entity "dem_giophutgiay" for hierarchy "top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|dem_giophutgiay:K3" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv Line: 51
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(35): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 35
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(40): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 40
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(44): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(54): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 54
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(59): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 59
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(63): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 63
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(72): truncated value with size 6 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 72
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(73): truncated value with size 32 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 73
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(77): truncated value with size 6 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 77
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(78): truncated value with size 32 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 78
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(81): truncated value with size 6 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 81
+Warning (10230): Verilog HDL assignment warning at dem_giophutgiay.sv(82): truncated value with size 32 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv Line: 82
+Info (12128): Elaborating entity "hextobcd_gpg" for hierarchy "top_giophutgiay:U_gpg|hextobcd_gpg:M3" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv Line: 61
+Info (12128): Elaborating entity "hextobcd_6bit" for hierarchy "top_giophutgiay:U_gpg|hextobcd_gpg:M3|hextobcd_6bit:K1" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at hextobcd_gpg.sv(44): truncated value with size 32 to match size of target (4) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv Line: 44
+Info (12128): Elaborating entity "giama_hienthi_gpg" for hierarchy "top_giophutgiay:U_gpg|giama_hienthi_gpg:M4" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv Line: 77
+Info (12128): Elaborating entity "giai_ma_7doan_ena" for hierarchy "top_giophutgiay:U_gpg|giama_hienthi_gpg:M4|giai_ma_7doan_ena:A1" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_gpg.sv Line: 20
+Info (12128): Elaborating entity "top_ngaythangnam" for hierarchy "top_ngaythangnam:U_ntn" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv Line: 57
+Info (12128): Elaborating entity "dem_ngaythangnam_3key" for hierarchy "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv Line: 60
+Info (12128): Elaborating entity "xu_ly_mod_ntn" for hierarchy "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv Line: 41
+Info (12128): Elaborating entity "mod_nhapnhay_ntn" for hierarchy "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|mod_nhapnhay_ntn:f2" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_ntn.sv Line: 99
+Info (12128): Elaborating entity "dem_ngaythangnam" for hierarchy "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv Line: 55
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(90): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 90
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(96): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 96
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(102): truncated value with size 32 to match size of target (6) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 102
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(113): truncated value with size 32 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 113
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(119): truncated value with size 32 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 119
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(125): truncated value with size 32 to match size of target (5) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 125
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(133): truncated value with size 32 to match size of target (16) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 133
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(136): truncated value with size 32 to match size of target (16) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 136
+Warning (10230): Verilog HDL assignment warning at dem_ngaythangnam.sv(139): truncated value with size 32 to match size of target (16) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 139
+Info (12128): Elaborating entity "hextobcd_16bit" for hierarchy "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|hextobcd_16bit:r1" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at hextobcd_ntn.sv(55): truncated value with size 32 to match size of target (4) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv Line: 55
+Warning (10230): Verilog HDL assignment warning at hextobcd_ntn.sv(57): truncated value with size 32 to match size of target (4) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at hextobcd_ntn.sv(59): truncated value with size 32 to match size of target (4) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv Line: 59
+Warning (10230): Verilog HDL assignment warning at hextobcd_ntn.sv(61): truncated value with size 32 to match size of target (4) File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv Line: 61
+Info (12128): Elaborating entity "bcd_to_binary" for hierarchy "top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|dem_ngaythangnam:K4|bcd_to_binary:r2" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv Line: 50
+Info (12128): Elaborating entity "hextobcd_ntn" for hierarchy "top_ngaythangnam:U_ntn|hextobcd_ntn:M3" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv Line: 75
+Info (12128): Elaborating entity "giama_hienthi_ntn" for hierarchy "top_ngaythangnam:U_ntn|giama_hienthi_ntn:M4" File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv Line: 96
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod_gpg.sv Line: 87
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 25 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1010 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 56 output pins
+    Info (21061): Implemented 946 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Sat Aug 23 15:00:15 2025
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:41
+
+

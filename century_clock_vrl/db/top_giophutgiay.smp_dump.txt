@@ -1,0 +1,14 @@
+
+State Machine - |top_giophutgiay|dem_giophutgiay_3key:M2|debounce_btn:K2|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 
+
+State Machine - |top_giophutgiay|dem_giophutgiay_3key:M2|debounce_btn:K1|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 

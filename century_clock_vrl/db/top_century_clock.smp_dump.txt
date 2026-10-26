@@ -1,0 +1,42 @@
+
+State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|xu_ly_mod_ntn:K3|dem_2bit_btn:f1|debounce:u1|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 
+
+State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K2|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 
+
+State Machine - |top_century_clock|top_ngaythangnam:U_ntn|dem_ngaythangnam_3key:M2|debounce:K1|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 
+
+State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K2|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 
+
+State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|debounce:K1|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 
+
+State Machine - |top_century_clock|top_giophutgiay:U_gpg|dem_giophutgiay_3key:M2|xu_ly_mod_gpg:K4|dem_2bit_btn:n1|debounce:u1|current_db
+Name current_db.WAIT1 current_db.ONE current_db.WAIT0 current_db.ZERO 
+current_db.ZERO 0 0 0 0 
+current_db.WAIT0 0 0 1 1 
+current_db.ONE 0 1 0 1 
+current_db.WAIT1 1 0 0 1 

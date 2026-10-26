@@ -1,0 +1,772 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dE:/Verilog_Training/tks_html
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1755594727
+V[dOD?R7lfT;`zVQD;iH3^0
+Z1 04 19 4 work tb_dem_ngaythangnam fast 0
+=1-cc47403a08f4-68a43fe7-6b-3b1c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.2c;57
+T_opt1
+Vm;kigEKF5jBRjcggVoeNQ3
+04 18 4 work tb_dem_giophutgiay fast 0
+=1-cc47403a08f4-689dafae-d7-7750
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt1
+R2
+Z4 dE:/Verilog_Training/tks_html
+!s110 1755164590
+T_opt2
+VA3HGVzo8[G?hk`acf42G^1
+R1
+=1-cc47403a08f4-689e99d1-13-24e0
+R3
+n@_opt2
+R2
+R4
+!s110 1755224529
+vbcd_to_binary
+Z5 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+Z6 !s110 1755594719
+IPRBWNbM1ah9f^2>_@[WPL1
+Z7 V`JN@9S9cnhjKRR_L]QIcM3
+Z8 !s105 bcdtohex_sv_unit
+S1
+Z9 dE:/Verilog_Training/quartus_fpga/century_clock_vrl
+w1755487752
+Z10 8E:/Verilog_Training/quartus_fpga/century_clock_vrl/bcdtohex.sv
+Z11 FE:/Verilog_Training/quartus_fpga/century_clock_vrl/bcdtohex.sv
+L0 1
+Z12 OL;L;10.2c;57
+r1
+31
+Z13 !s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/bcdtohex.sv|
+Z14 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z15 !s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/bcdtohex.sv|
+!s100 95301o@?>l0V0NZJf6mn@0
+!s108 1755594719.758000
+!i10b 1
+!s85 0
+!i111 0
+vbcd_to_hex
+R5
+IJQKfo<d`@cV9Hmzl>E=^h0
+R7
+S1
+R9
+w1755486332
+R10
+R11
+L0 1
+R12
+r1
+31
+R14
+R8
+R15
+R13
+!s110 1755486440
+!s100 m]PYP=6`8<@6LTI`1S2Rj2
+!s108 1755486440.560000
+!i10b 1
+!s85 0
+!i111 0
+vchia_10enable
+R5
+Z16 !s110 1755594718
+IF2B7oePfBSCl[^6gR09Az2
+R7
+S1
+R9
+w1754939719
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv
+L0 1
+R12
+r1
+31
+R14
+!s100 68G6ZJWz>J^]geb28k?RB1
+!s105 chia_10enable_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv|
+!s108 1755594718.881000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/chia_10enable.sv|
+!i10b 1
+!s85 0
+!i111 0
+vdaucham
+R5
+IK55j_n:ZKo;Q[N47k@jTl1
+R7
+S1
+R9
+w1755169621
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/xuly_mod_daucham.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/xuly_mod_daucham.sv
+L0 68
+R12
+r1
+31
+R14
+!s110 1755229224
+!s105 xuly_mod_daucham_sv_unit
+!s108 1755229224.547000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/xuly_mod_daucham.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/xuly_mod_daucham.sv|
+!s100 _`9LeNBc3?fOc9]Gkd8ST0
+!i10b 1
+!s85 0
+!i111 0
+vdebounce
+R5
+R16
+IW:Ljf2n0CW`X_iW5zM_iC0
+R7
+Z17 !s105 debounce_sv_unit
+S1
+R9
+w1755488433
+Z18 8E:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv
+Z19 FE:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv
+L0 1
+R12
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv|
+R14
+Z21 !s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/debounce.sv|
+!s100 6:;;MQ`6>:D>f1BH4`00T0
+!s108 1755594718.931000
+!i10b 1
+!s85 0
+!i111 0
+vdebounce_btn
+R5
+IcShEc`QaQ`_ff0D<jg_GC1
+R7
+R17
+S1
+R9
+w1755168453
+R18
+R19
+L0 1
+R12
+r1
+31
+R20
+R14
+R21
+!s110 1755487768
+!s100 ;<fP[]f<^>aVOY2kJL[Z51
+!s108 1755487768.198000
+!i10b 1
+!s85 0
+!i111 0
+vdem_2bit
+R5
+R6
+IGNL4SK[c3Zo=R4gNYOlGI1
+R7
+Z22 !s105 xu_ly_mod_sv_unit
+S1
+R9
+Z23 w1755498898
+Z24 8E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod.sv
+Z25 FE:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod.sv
+L0 44
+R12
+r1
+31
+Z26 !s108 1755594719.855000
+Z27 !s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod.sv|
+Z28 !s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/xu_ly_mod.sv|
+R14
+!i10b 1
+!s100 c^V5:gE^e?:iQWo`FX2`l3
+!s85 0
+!i111 0
+vdem_2bit_btn
+R5
+R6
+I[;M?;J`Hb>TZkTUeJAMoG0
+R7
+R22
+S1
+R9
+R23
+R24
+R25
+L0 17
+R12
+r1
+31
+R26
+R27
+R28
+R14
+!i10b 1
+!s100 >7l2T[d79S>05baNlHlY^1
+!s85 0
+!i111 0
+vdem_giophutgiay
+R5
+R16
+InCBXei8M3Th<8Cc=TGT2l2
+R7
+S1
+R9
+w1755591949
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv
+L0 1
+R12
+r1
+31
+R14
+!s105 dem_giophutgiay_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv|
+!s100 W?e=Lh:5C9A`4f7WY]1H71
+!s108 1755594718.992000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay.sv|
+!i10b 1
+!s85 0
+!i111 0
+vdem_giophutgiay_3key
+R5
+Ic]:>FC6O5e0ga4MgLdE?I3
+R7
+S1
+R9
+w1755591987
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv
+L0 1
+R12
+r1
+31
+R14
+R6
+!s105 dem_giophutgiay_3key_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv|
+!s100 iQlOFlnS:C1IVgNF@8PKc0
+!s108 1755594719.029000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_giophutgiay_3key.sv|
+!i10b 1
+!s85 0
+!i111 0
+vdem_ngaythangnam
+R5
+R6
+I<ka6b_XkS4HgkN5]V`HFC1
+R7
+S1
+R9
+w1755593256
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv
+L0 1
+R12
+r1
+31
+R14
+!s105 dem_ngaythangnam_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv|
+!s100 bgePAI2V^HY25[U71X2cF3
+!s108 1755594719.072000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam.sv|
+!i10b 1
+!s85 0
+!i111 0
+vdem_ngaythangnam_3key
+R5
+R6
+I_]`VHKBI@=EBJka9CA_fW0
+R7
+S1
+R9
+w1755592106
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv
+L0 1
+R12
+r1
+31
+R14
+!s105 dem_ngaythangnam_3key_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv|
+!s100 ibEAh>c_clVGD@MSTLU6n1
+!s108 1755594719.124000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/dem_ngaythangnam_3key.sv|
+!i10b 1
+!s85 0
+!i111 0
+vgiai_ma_7doan_ena
+R5
+R6
+I`_hZS12nj0Cidh1PI0?nI1
+R7
+S1
+R9
+w1755166707
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/giai_ma_7doan_ena.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/giai_ma_7doan_ena.sv
+L0 1
+R12
+r1
+31
+R14
+!s100 ^ijog5?CP;1<MJYohGN082
+!s105 giai_ma_7doan_ena_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/giai_ma_7doan_ena.sv|
+!s108 1755594719.169000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/giai_ma_7doan_ena.sv|
+!i10b 1
+!s85 0
+!i111 0
+vgiama_hienthi_8led
+R5
+Z29 !s110 1755229225
+IU_XfTUh4l2eZ17Wf@z:ij3
+R7
+S1
+R9
+w1755169256
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_8led.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_8led.sv
+L0 1
+R12
+r1
+31
+R14
+!s100 HSM2[oXPXYzZRXLnFi9SM1
+!s105 giaima_hienthi_8led_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_8led.sv|
+!s108 1755229225.101000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_8led.sv|
+!i10b 1
+!s85 0
+!i111 0
+vgiama_hienthi_gpg
+R5
+R6
+IW[jHO4PFPPVTYFMXe1>k[2
+R7
+S1
+R9
+w1755229664
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_gpg.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_gpg.sv
+L0 1
+R12
+r1
+31
+R14
+!s100 ON]GbNiPGZEKn:1Um0ZAL1
+!s105 giaima_hienthi_gpg_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_gpg.sv|
+!s108 1755594719.216000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_gpg.sv|
+!i10b 1
+!s85 0
+!i111 0
+vgiama_hienthi_ntn
+R5
+R6
+I41HHb;0bRcZEhcJNh[NYb0
+R7
+S1
+R9
+w1755230020
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_ntn.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_ntn.sv
+L0 1
+R12
+r1
+31
+R14
+!s100 B5>GVOOV:QU[8H^hnXlC80
+!s105 giaima_hienthi_ntn_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_ntn.sv|
+!s108 1755594719.268000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/giaima_hienthi_ntn.sv|
+!i10b 1
+!s85 0
+!i111 0
+vhextobcd_16bit
+R5
+R6
+I>hTo5Zzeb^;Y8F?jdJHC32
+R7
+Z30 !s105 hextobcd_ntn_sv_unit
+S1
+R9
+Z31 w1755230864
+Z32 8E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv
+Z33 FE:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv
+L0 41
+R12
+r1
+31
+Z34 !s108 1755594719.369000
+Z35 !s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv|
+Z36 !s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_ntn.sv|
+R14
+!s100 8YM7zDelndR1eQ[?U9kF70
+!i10b 1
+!s85 0
+!i111 0
+vhextobcd_6bit
+R5
+R6
+Ikj[F]SDLe0@9GVY9ah;mM1
+R7
+Z37 !s105 hextobcd_gpg_sv_unit
+S1
+R9
+Z38 w1755155260
+Z39 8E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv
+Z40 FE:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv
+L0 31
+R12
+r1
+31
+Z41 !s108 1755594719.316000
+Z42 !s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv|
+Z43 !s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/hextobcd_gpg.sv|
+R14
+!s100 2g?^Znhe[j072aN7BIkU03
+!i10b 1
+!s85 0
+!i111 0
+vhextobcd_gpg
+R5
+R6
+IGWjn?3ciU_>JiN:mk;gV^0
+R7
+R37
+S1
+R9
+R38
+R39
+R40
+L0 1
+R12
+r1
+31
+R41
+R42
+R43
+R14
+!s100 a=15IiIIjWB_HD5UIgDfD1
+!i10b 1
+!s85 0
+!i111 0
+vhextobcd_ngaythangnam
+R5
+R29
+IMgYSDSaPk>JA:FJ9_5hA21
+R7
+R30
+S1
+R9
+w1755229107
+R32
+R33
+L0 1
+R12
+r1
+31
+R35
+R36
+R14
+!s108 1755229225.742000
+!s100 [PjWR?d3o@16K1@K;4^]M2
+!i10b 1
+!s85 0
+!i111 0
+vhextobcd_ntn
+R5
+R6
+IHe2JY=l>gm2?5CcElEoLK0
+R7
+R30
+S1
+R9
+R31
+R32
+R33
+L0 1
+R12
+r1
+31
+R34
+R35
+R36
+R14
+!s100 5cbNF^GD85SAJnid8oa`I1
+!i10b 1
+!s85 0
+!i111 0
+vlam_hep_xung
+R5
+R6
+IL=;B9XkMQgUdPLn_LD4BX2
+R7
+S1
+R9
+w1755024501
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/lam_hep_xung.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/lam_hep_xung.sv
+L0 1
+R12
+r1
+31
+R14
+!s100 D9g`h5gMV>DWdCFa1Hgi?1
+!s105 lam_hep_xung_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/lam_hep_xung.sv|
+!s108 1755594719.429000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/lam_hep_xung.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_bcd_to_binary
+R5
+I@4A8NPd;>d^YM?ZzlP3AC0
+R7
+S1
+R9
+w1755487141
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_bcdtohex.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_bcdtohex.sv
+L0 1
+R12
+r1
+31
+R14
+!s110 1755487156
+!s105 tb_bcdtohex_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_bcdtohex.sv|
+!s100 AkQk4ONBAoci61dlPYJDl1
+!s108 1755487156.777000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_bcdtohex.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_dem_giophutgiay
+R5
+R6
+I:?hgfCIafKP^^=i<M=RnE0
+R7
+S1
+R9
+w1755164477
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_giophutgiay.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_giophutgiay.sv
+L0 3
+R12
+r1
+31
+R14
+!s100 4[2_ieiQY@h5h0>jTX36K0
+!s105 tb_dem_giophutgiay_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_giophutgiay.sv|
+!s108 1755594719.478000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_giophutgiay.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_dem_ngaythangnam
+R5
+R6
+IX[5X^9?O[h66S9V9BSN6=1
+R7
+S1
+R9
+w1755594708
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_ngaythangnam.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_ngaythangnam.sv
+L0 3
+R12
+r1
+31
+R14
+!s105 tb_dem_ngaythangnam_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_ngaythangnam.sv|
+!s100 >bL@N@HPk>J__A^HW6W7=1
+!s108 1755594719.529000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_dem_ngaythangnam.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_hextobcd_6bit
+R5
+R6
+IQBJ>NER1S7KPVb>_7C9aL3
+R7
+S1
+R9
+w1755155060
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_6bit.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_6bit.sv
+L0 1
+R12
+r1
+31
+R14
+!s100 gK]_G_>AZbOiRRmB^P<[61
+!s105 tb_hextobcd_6bit_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_6bit.sv|
+!s108 1755594719.582000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_6bit.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_hextobcd_ntn
+R5
+R6
+IWEn=BjUCRic@fK?TSPT0F1
+R7
+S1
+R9
+w1755229192
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_ntn.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_ntn.sv
+L0 3
+R12
+r1
+31
+R14
+!s100 E:QNfzmVzm^mN=G98]WLU2
+!s105 tb_hextobcd_ntn_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_ntn.sv|
+!s108 1755594719.632000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_hextobcd_ntn.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_top_giophutgiay
+R5
+R6
+I9`BRAR^KITDY`eR66nZ_?3
+R7
+S1
+R9
+w1755496218
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_top_giophutgiay.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_top_giophutgiay.sv
+L0 2
+R12
+r1
+31
+R14
+!s100 zo5AS<H<0;Q[Q5@;:EGTe0
+!s105 tb_top_giophutgiay_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_top_giophutgiay.sv|
+!s108 1755594719.813000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/tb_top_giophutgiay.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtop_century_clock
+R5
+R6
+Ik1A>5Z>edaRC:eo>6K=o03
+R7
+S1
+R9
+w1755592203
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv
+L0 1
+R12
+r1
+31
+R14
+!s105 top_century_clock_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv|
+!s100 jW[J]8DH9<NRZjanLYN;N2
+!s108 1755594719.679000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_century_clock.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtop_giophutgiay
+R5
+R6
+Ia[J:<Tb92n8OZXX5Wn_j81
+R7
+S1
+R9
+w1755592164
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv
+L0 1
+R12
+r1
+31
+R14
+!s105 top_giophutgiay_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv|
+!s100 d2L1:>Mcg1aemQ?Wz;3e31
+!s108 1755594719.719000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_giophutgiay.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtop_ngaythangnam
+R5
+Ic?Aa21cz?P3@ARLI>[MHL3
+R7
+S1
+R9
+w1755592171
+8E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv
+FE:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv
+L0 1
+R12
+r1
+31
+R14
+R16
+!s105 top_ngaythangnam_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv|
+!s100 d_`a<HcVdTJi_2O6?5U^U3
+!s108 1755594718.715000
+!s107 E:/Verilog_Training/quartus_fpga/century_clock_vrl/top_ngaythangnam.sv|
+!i10b 1
+!s85 0
+!i111 0
+vxu_ly_mod
+R5
+R6
+I9^kdYW^;S4kYM2=8>zeLf1
+R7
+R22
+S1
+R9
+R23
+R24
+R25
+L0 1
+R12
+r1
+31
+R26
+R27
+R28
+R14
+!i10b 1
+!s100 RJ^oNUd6AaJU668ILQ]WY1
+!s85 0
+!i111 0

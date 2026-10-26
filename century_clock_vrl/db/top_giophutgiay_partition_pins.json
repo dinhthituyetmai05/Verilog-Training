@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hexout_ch_gio[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_gio[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_gio[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_gio[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_gio[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_gio[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_gio[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_gio[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_gio[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_gio[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_gio[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_gio[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_gio[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_phut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_phut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_phut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_phut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_phut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_phut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_phut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_phut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_phut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_phut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_phut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_phut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_phut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_phut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_giay[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_giay[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_giay[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_giay[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_giay[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_giay[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_ch_giay[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_giay[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_giay[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_giay[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_giay[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_giay[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_giay[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_dv_giay[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rstn",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_mod[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw_mod[0]",
+					"strict" : false
+				},
+				{
+					"name" : "btn_up",
+					"strict" : false
+				},
+				{
+					"name" : "btn_down",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
