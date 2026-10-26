@@ -1,0 +1,181 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hexout_a_donvi[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_donvi[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_donvi[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_donvi[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_donvi[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_donvi[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_donvi[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_chuc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_chuc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_chuc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_a_chuc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_donvi[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_donvi[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_donvi[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_donvi[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_donvi[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_donvi[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_donvi[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_chuc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_chuc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_chuc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_b_chuc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_donvi[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_donvi[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_donvi[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_donvi[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_donvi[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_donvi[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_donvi[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_chuc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_chuc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_chuc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexout_result_chuc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[0]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[2]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[1]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[3]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[4]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[6]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[5]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[7]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[8]",
+					"strict" : false
+				},
+				{
+					"name" : "datain[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,281 @@
+|alu_top
+datain[0] => a[0].IN2
+datain[1] => a[1].IN2
+datain[2] => a[2].IN2
+datain[3] => a[3].IN2
+datain[4] => b[0].IN2
+datain[5] => b[1].IN2
+datain[6] => b[2].IN2
+datain[7] => b[3].IN2
+datain[8] => datain[8].IN1
+datain[9] => datain[9].IN1
+hexout_a_donvi[0] << giai_ma_7seg:u_a_donvi.hex_out
+hexout_a_donvi[1] << giai_ma_7seg:u_a_donvi.hex_out
+hexout_a_donvi[2] << giai_ma_7seg:u_a_donvi.hex_out
+hexout_a_donvi[3] << giai_ma_7seg:u_a_donvi.hex_out
+hexout_a_donvi[4] << giai_ma_7seg:u_a_donvi.hex_out
+hexout_a_donvi[5] << giai_ma_7seg:u_a_donvi.hex_out
+hexout_a_donvi[6] << giai_ma_7seg:u_a_donvi.hex_out
+hexout_a_chuc[0] << giai_ma_7seg:u_a_chuc.hex_out
+hexout_a_chuc[1] << giai_ma_7seg:u_a_chuc.hex_out
+hexout_a_chuc[2] << giai_ma_7seg:u_a_chuc.hex_out
+hexout_a_chuc[3] << giai_ma_7seg:u_a_chuc.hex_out
+hexout_a_chuc[4] << giai_ma_7seg:u_a_chuc.hex_out
+hexout_a_chuc[5] << giai_ma_7seg:u_a_chuc.hex_out
+hexout_a_chuc[6] << giai_ma_7seg:u_a_chuc.hex_out
+hexout_b_donvi[0] << giai_ma_7seg:u_b_donvi.hex_out
+hexout_b_donvi[1] << giai_ma_7seg:u_b_donvi.hex_out
+hexout_b_donvi[2] << giai_ma_7seg:u_b_donvi.hex_out
+hexout_b_donvi[3] << giai_ma_7seg:u_b_donvi.hex_out
+hexout_b_donvi[4] << giai_ma_7seg:u_b_donvi.hex_out
+hexout_b_donvi[5] << giai_ma_7seg:u_b_donvi.hex_out
+hexout_b_donvi[6] << giai_ma_7seg:u_b_donvi.hex_out
+hexout_b_chuc[0] << giai_ma_7seg:u_b_chuc.hex_out
+hexout_b_chuc[1] << giai_ma_7seg:u_b_chuc.hex_out
+hexout_b_chuc[2] << giai_ma_7seg:u_b_chuc.hex_out
+hexout_b_chuc[3] << giai_ma_7seg:u_b_chuc.hex_out
+hexout_b_chuc[4] << giai_ma_7seg:u_b_chuc.hex_out
+hexout_b_chuc[5] << giai_ma_7seg:u_b_chuc.hex_out
+hexout_b_chuc[6] << giai_ma_7seg:u_b_chuc.hex_out
+hexout_result_donvi[0] << giai_ma_7seg:u_result_donvi.hex_out
+hexout_result_donvi[1] << giai_ma_7seg:u_result_donvi.hex_out
+hexout_result_donvi[2] << giai_ma_7seg:u_result_donvi.hex_out
+hexout_result_donvi[3] << giai_ma_7seg:u_result_donvi.hex_out
+hexout_result_donvi[4] << giai_ma_7seg:u_result_donvi.hex_out
+hexout_result_donvi[5] << giai_ma_7seg:u_result_donvi.hex_out
+hexout_result_donvi[6] << giai_ma_7seg:u_result_donvi.hex_out
+hexout_result_chuc[0] << giai_ma_7seg:u_result_chuc.hex_out
+hexout_result_chuc[1] << giai_ma_7seg:u_result_chuc.hex_out
+hexout_result_chuc[2] << giai_ma_7seg:u_result_chuc.hex_out
+hexout_result_chuc[3] << giai_ma_7seg:u_result_chuc.hex_out
+hexout_result_chuc[4] << giai_ma_7seg:u_result_chuc.hex_out
+hexout_result_chuc[5] << giai_ma_7seg:u_result_chuc.hex_out
+hexout_result_chuc[6] << giai_ma_7seg:u_result_chuc.hex_out
+
+
+|alu_top|alu_4bit:u_alu_4bit
+datain[0] => a[0].IN1
+datain[1] => a[1].IN1
+datain[2] => a[2].IN1
+datain[3] => a[3].IN1
+datain[4] => b[0].IN1
+datain[5] => b[1].IN1
+datain[6] => b[2].IN1
+datain[7] => b[3].IN1
+datain[8] => WideOr0.IN0
+datain[8] => Mux0.IN5
+datain[8] => Mux1.IN5
+datain[8] => Mux2.IN5
+datain[8] => Mux3.IN5
+datain[9] => WideOr0.IN1
+datain[9] => Mux0.IN4
+datain[9] => Mux1.IN4
+datain[9] => Mux2.IN4
+datain[9] => Mux3.IN4
+result[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|alu_4bit:u_alu_4bit|add_sub_4bit_sign:add_sub
+sub => sub.IN1
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+x[2] => x[2].IN1
+x[3] => x[3].IN1
+y[0] => a.IN0
+y[1] => a.IN0
+y[2] => a.IN0
+y[3] => a.IN0
+result[0] <= fulladder:f0.x
+result[1] <= fulladder:f1.x
+result[2] <= fulladder:f2.x
+result[3] <= fulladder:f3.x
+
+
+|alu_top|alu_4bit:u_alu_4bit|add_sub_4bit_sign:add_sub|fulladder:f0
+a => x.IN0
+a => c_out.IN0
+b => x.IN1
+b => c_out.IN1
+c_in => x.IN1
+c_in => c_out.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|alu_4bit:u_alu_4bit|add_sub_4bit_sign:add_sub|fulladder:f1
+a => x.IN0
+a => c_out.IN0
+b => x.IN1
+b => c_out.IN1
+c_in => x.IN1
+c_in => c_out.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|alu_4bit:u_alu_4bit|add_sub_4bit_sign:add_sub|fulladder:f2
+a => x.IN0
+a => c_out.IN0
+b => x.IN1
+b => c_out.IN1
+c_in => x.IN1
+c_in => c_out.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|alu_4bit:u_alu_4bit|add_sub_4bit_sign:add_sub|fulladder:f3
+a => x.IN0
+a => c_out.IN0
+b => x.IN1
+b => c_out.IN1
+c_in => x.IN1
+c_in => c_out.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|hextobcd_4bit:u_a
+sohex4bit[0] => Decoder1.IN3
+sohex4bit[0] => donvi[0].DATAIN
+sohex4bit[1] => Decoder0.IN2
+sohex4bit[1] => Decoder1.IN2
+sohex4bit[2] => Decoder0.IN1
+sohex4bit[2] => Decoder1.IN1
+sohex4bit[3] => Decoder0.IN0
+sohex4bit[3] => Decoder1.IN0
+donvi[0] <= sohex4bit[0].DB_MAX_OUTPUT_PORT_TYPE
+donvi[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+donvi[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+donvi[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+chuc[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+chuc[1] <= <GND>
+chuc[2] <= <GND>
+chuc[3] <= <GND>
+
+
+|alu_top|hextobcd_4bit:u_b
+sohex4bit[0] => Decoder1.IN3
+sohex4bit[0] => donvi[0].DATAIN
+sohex4bit[1] => Decoder0.IN2
+sohex4bit[1] => Decoder1.IN2
+sohex4bit[2] => Decoder0.IN1
+sohex4bit[2] => Decoder1.IN1
+sohex4bit[3] => Decoder0.IN0
+sohex4bit[3] => Decoder1.IN0
+donvi[0] <= sohex4bit[0].DB_MAX_OUTPUT_PORT_TYPE
+donvi[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+donvi[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+donvi[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+chuc[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+chuc[1] <= <GND>
+chuc[2] <= <GND>
+chuc[3] <= <GND>
+
+
+|alu_top|hextobcd_4bit:u_result
+sohex4bit[0] => Decoder1.IN3
+sohex4bit[0] => donvi[0].DATAIN
+sohex4bit[1] => Decoder0.IN2
+sohex4bit[1] => Decoder1.IN2
+sohex4bit[2] => Decoder0.IN1
+sohex4bit[2] => Decoder1.IN1
+sohex4bit[3] => Decoder0.IN0
+sohex4bit[3] => Decoder1.IN0
+donvi[0] <= sohex4bit[0].DB_MAX_OUTPUT_PORT_TYPE
+donvi[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+donvi[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+donvi[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+chuc[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+chuc[1] <= <GND>
+chuc[2] <= <GND>
+chuc[3] <= <GND>
+
+
+|alu_top|giai_ma_7seg:u_a_donvi
+bin_in[0] => Decoder0.IN3
+bin_in[1] => Decoder0.IN2
+bin_in[2] => Decoder0.IN1
+bin_in[3] => Decoder0.IN0
+hex_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|giai_ma_7seg:u_a_chuc
+bin_in[0] => Decoder0.IN3
+bin_in[1] => Decoder0.IN2
+bin_in[2] => Decoder0.IN1
+bin_in[3] => Decoder0.IN0
+hex_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|giai_ma_7seg:u_b_donvi
+bin_in[0] => Decoder0.IN3
+bin_in[1] => Decoder0.IN2
+bin_in[2] => Decoder0.IN1
+bin_in[3] => Decoder0.IN0
+hex_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|giai_ma_7seg:u_b_chuc
+bin_in[0] => Decoder0.IN3
+bin_in[1] => Decoder0.IN2
+bin_in[2] => Decoder0.IN1
+bin_in[3] => Decoder0.IN0
+hex_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|giai_ma_7seg:u_result_donvi
+bin_in[0] => Decoder0.IN3
+bin_in[1] => Decoder0.IN2
+bin_in[2] => Decoder0.IN1
+bin_in[3] => Decoder0.IN0
+hex_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_top|giai_ma_7seg:u_result_chuc
+bin_in[0] => Decoder0.IN3
+bin_in[1] => Decoder0.IN2
+bin_in[2] => Decoder0.IN1
+bin_in[3] => Decoder0.IN0
+hex_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
